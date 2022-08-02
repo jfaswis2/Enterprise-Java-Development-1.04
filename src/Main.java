@@ -3,9 +3,11 @@ public class Main {
         int[] num = {8, 9, 6, 6, 15, 6, 9, 6, 1};
         mayorMenor(num);
         primeroSegundo(num);
+        expresion(7.0,2.0);
     }
 
     public static void mayorMenor(int[] num) {
+        System.out.println("\n -----EJERCICIO 1-----");
 
         if (num.length >= 1) {
 
@@ -30,6 +32,7 @@ public class Main {
     }
 
     public static void primeroSegundo(int[] num) {
+        System.out.println("\n -----EJERCICIO 2-----");
 
         int numMenor = num[0];
         int numSegundo = num[0];
@@ -50,8 +53,11 @@ public class Main {
 
         System.out.println("Menor numero: " + numMenor);
         System.out.println("Segundo menor numero: " + numSegundo);
-
     }
 
+    public static void expresion(double x, double y){
+        System.out.println("\n -----EJERCICIO 3-----");
 
+        System.out.println((Math.pow(x,2)) + (Math.pow(((4*y)/(5))-x,2)));
+    }
 }
